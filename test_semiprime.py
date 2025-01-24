@@ -26,9 +26,9 @@ class TestSemiprime(unittest.TestCase):
         self.assertEqual(find_semiprimes(1, 3), set())
         
          Test invalid range
-        with self.assertRaises(ValueError)
+        with self.assertRaises(ValueError):
             find_semiprimes(-1, 10)
-        with self.assertRaises(ValueError)
+        with self.assertRaises(ValueError):
             find_semiprimes(10, 5)
 
     def test_edge_cases(self):
